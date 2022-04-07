@@ -1,0 +1,9 @@
+.card__list-item {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   background-color: #fff;
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+}
