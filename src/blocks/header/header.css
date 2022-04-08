@@ -1,6 +1,7 @@
 .header {
    width: 880px;
-   margin: 45px auto 0;
+   margin: 0 auto;
+   padding-top: 45px;
 }
 
 .header:after {
