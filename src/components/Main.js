@@ -20,6 +20,8 @@ function Main(props) {
          .catch((err) => console.log(`Ошибка: ${err}`));
    }, []);
 
+
+
    return (
       <main className="content">
          <section className="profile">
