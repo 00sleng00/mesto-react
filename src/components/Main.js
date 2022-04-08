@@ -29,7 +29,7 @@ function Main(props) {
             <div className="profile__info">
                <h1 className="profile__info-name">{userName}</h1>
                <p className="profile__info-job">{userDescription}</p>
-               <button onClick={props.onEditProfile} type="button" aria-label="edit" className="profile__info-edit-button"></button>
+               <button onClick={props.onEditProfile} type="button"  className="profile__info-edit-button"></button>
             </div>
             <button onClick={props.onAddPlace} type="button" className="profile__info-add-button"></button>
          </section>
