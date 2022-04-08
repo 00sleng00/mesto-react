@@ -23,7 +23,7 @@ function Main(props) {
    return (
       <main className="content">
          <section className="profile">
-            <div className="profile__icon" type="button" aria-label="Сменить_аватар" onClick={props.onEditAvatar}>
+            <div className="profile__icon" type="button" onClick={props.onEditAvatar}>
                <img src={userAvatar} alt="Аватарка" className="profile__avatar" />
             </div>
             <div className="profile__info">
