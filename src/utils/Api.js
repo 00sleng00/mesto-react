@@ -40,7 +40,7 @@ class Api {
          .then(this._checkRequest)
    }
 
-   editAvatar(avatar) {
+   editAvatar({avatar}) {
       return fetch(`${this._baseUrl}/users/me/avatar`, {
          method: "PATCH",
          headers: this._headers,

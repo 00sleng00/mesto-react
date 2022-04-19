@@ -2,8 +2,9 @@
    margin: 0;
    padding: 0;
    list-style: none;
-   background-color: #fff;
    border-radius: 10px;
    overflow: hidden;
    position: relative;
+   display: grid;
+   grid-template-rows: 282px;
 }
