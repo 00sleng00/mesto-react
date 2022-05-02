@@ -9,6 +9,7 @@ import AddPlacePopup from "./AddPlacePopup";
 import EditAvatarPopup from "./EditAvatarPopup";
 import EditProfilePopup from "./EditProfilePopup";
 
+
 function App() {
 
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
@@ -17,6 +18,7 @@ function App() {
     const [selectedCard, setSelectedCard] = React.useState({});
     const [currentUser, setCurrentUser] = React.useState({});
     const [cards, setCards] = React.useState([]);
+
 
     function handleCardClick(card) {
         setSelectedCard(card);
@@ -40,6 +42,7 @@ function App() {
         setIsEditProfilePopupOpen(false);
         setSelectedCard({});
     }
+
 
     const handleUpdateUser = (name, about) => {
         api.editProfile(name, about)
@@ -133,6 +136,7 @@ function App() {
                     onCardLike={handleCardLike}
                     onCardDelete={handleCardDelete}
                 />
+
                 <Footer />
 
                 <EditProfilePopup
@@ -152,7 +156,6 @@ function App() {
                     onClose={closeAllPopups}
                     onUpdateAvatar={handleUpdateAvatar}
                 />
-
 
                 <ImagePopup card={selectedCard} onClose={closeAllPopups} />
             </CurrentUserContext.Provider>
