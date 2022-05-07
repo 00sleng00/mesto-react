@@ -141,6 +141,14 @@ function App() {
             })
     };
 
+    React.useEffect(() => {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeAllPopups();
+            }
+        });
+    }, []);
+
 
     return (
         <div className="page">
