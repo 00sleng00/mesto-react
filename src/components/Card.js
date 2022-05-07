@@ -1,7 +1,7 @@
 import React from "react";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
-function Card({ card, onCardClick, onCardLike, onCardDelete }) {
+function Card({ card, onCardClick, onCardLike, onConfirmDelete }) {
 
    const handleClick = () => {
       onCardClick(card);
@@ -12,7 +12,7 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
    }
 
    const handleDeleteClick = () => {
-      onCardDelete(card);
+      onConfirmDelete(card);
    }
 
       const currentUser = React.useContext(CurrentUserContext);
